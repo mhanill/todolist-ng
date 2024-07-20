@@ -1,0 +1,12 @@
+<div class="parentUsers">
+    <div>
+        @for (user of ourUsers; track $index) {
+            <app-user [user]="user" [selected]="user.id === selectedUserId" (select)="onSelectUser($event)"/>
+        }
+    </div>
+    <div>
+        @if(selectedUserId) {
+            <app-tasks [user]="ourUsers"/>
+        }
+    </div>
+</div>
