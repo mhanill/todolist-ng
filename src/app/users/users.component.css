@@ -1,0 +1,13 @@
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 500px;
+    justify-self: center;
+}
+
+div.parentUsers{
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+}
