@@ -9,5 +9,5 @@ import { type UserType } from '../users/user/user.model';
   styleUrl: './tasks.component.css'
 })
 export class TasksComponent {
-  @Input({required:true}) user : UserType | undefined
+  @Input({required:true}) user : UserType | undefined | unknown
 }
