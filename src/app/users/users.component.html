@@ -6,7 +6,7 @@
     </div>
     <div>
         @if(selectedUserId) {
-            <app-tasks [user]="ourUsers" />
+            <app-tasks [userId]="selectedUser?.id" [userName]="selectedUser?.name"/>
         }
     </div>
 </div>

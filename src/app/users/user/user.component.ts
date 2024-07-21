@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { type UserType } from './user.model';
+import { TaskComponent } from '../../tasks/task/task.component';
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [TaskComponent],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
